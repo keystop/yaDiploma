@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/keystop/yaDiploma/internal/models"
-	"github.com/keystop/yaDiploma/pkg/logger"
+	"github.com/keystop/yaDiploma.git/internal/models"
+	"github.com/keystop/yaDiploma.git/pkg/logger"
 )
 
 type DBOrdersRepo struct {

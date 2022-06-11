@@ -5,7 +5,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/keystop/yaDiploma/pkg/logger"
+	"github.com/keystop/yaDiploma.git/pkg/logger"
 	"github.com/caarlos0/env/v6"
 )
 

@@ -3,9 +3,9 @@ package main
 import (
 	"database/sql"
 
-	"github.com/keystop/yaDiploma/internal/config"
-	"github.com/keystop/yaDiploma/pkg/logger"
-	_ "github.com/lib/pq"
+	"github.com/keystop/yaDiploma.git/internal/config"
+	"github.com/keystop/yaDiploma.git/pkg/logger"
+	_"github.com/lib/pq"
 
 	"github.com/pressly/goose/v3"
 )

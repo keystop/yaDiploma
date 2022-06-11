@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/keystop/yaDiploma/internal/models"
-	"github.com/keystop/yaDiploma/pkg/logger"
+	"github.com/keystop/yaDiploma.git/internal/models"
+	"github.com/keystop/yaDiploma.git/pkg/logger"
 )
 
 func CheckAuthorization(ur models.UsersRepo) func(http.Handler) http.Handler {

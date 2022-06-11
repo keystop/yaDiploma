@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/keystop/yaDiploma/internal/config"
-	"github.com/keystop/yaDiploma/internal/handlers"
-	"github.com/keystop/yaDiploma/internal/middlewares"
-	"github.com/keystop/yaDiploma/internal/models"
-	"github.com/keystop/yaDiploma/pkg/logger"
+	"github.com/keystop/yaDiploma.git/internal/config"
+	"github.com/keystop/yaDiploma.git/internal/handlers"
+	"github.com/keystop/yaDiploma.git/internal/middlewares"
+	"github.com/keystop/yaDiploma.git/internal/models"
+	"github.com/keystop/yaDiploma.git/pkg/logger"
 	"github.com/go-chi/chi/v5"
 )
 

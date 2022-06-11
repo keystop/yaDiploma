@@ -4,12 +4,12 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/keystop/yaDiploma/internal/config"
-	"github.com/keystop/yaDiploma/internal/models"
-	"github.com/keystop/yaDiploma/pkg/client"
-	"github.com/keystop/yaDiploma/pkg/logger"
-	"github.com/keystop/yaDiploma/pkg/utility"
-	"github.com/keystop/yaDiploma/pkg/workers"
+	"github.com/keystop/yaDiploma.git/internal/config"
+	"github.com/keystop/yaDiploma.git/internal/models"
+	"github.com/keystop/yaDiploma.git/pkg/client"
+	"github.com/keystop/yaDiploma.git/pkg/logger"
+	"github.com/keystop/yaDiploma.git/pkg/utility"
+	"github.com/keystop/yaDiploma.git/pkg/workers"
 )
 
 // servAddress string

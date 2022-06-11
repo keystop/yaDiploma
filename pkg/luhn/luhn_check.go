@@ -3,7 +3,7 @@ package luhn
 import (
 	"strconv"
 
-	"github.com/keystop/yaDiploma/pkg/logger"
+	"github.com/keystop/yaDiploma.git/pkg/logger"
 )
 
 func CheckInteger(i int) bool {

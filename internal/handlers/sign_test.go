@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/keystop/yaDiploma/internal/models"
-	"github.com/keystop/yaDiploma/pkg/logger"
+	"github.com/keystop/yaDiploma.git/internal/models"
+	"github.com/keystop/yaDiploma.git/pkg/logger"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

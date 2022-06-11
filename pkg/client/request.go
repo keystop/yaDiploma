@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/keystop/yaDiploma/pkg/logger"
+	"github.com/keystop/yaDiploma.git/pkg/logger"
 )
 
 func MakeRequest(rtype, address, ctype, authorization string, b []byte) ([]byte, bool) {

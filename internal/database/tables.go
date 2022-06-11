@@ -3,7 +3,7 @@ package database
 import (
 	"context"
 
-	"github.com/keystop/yaDiploma/pkg/logger"
+	"github.com/keystop/yaDiploma.git/pkg/logger"
 )
 
 func (s *serverDB) createTables(ctx context.Context) {

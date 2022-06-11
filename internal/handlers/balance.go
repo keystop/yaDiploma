@@ -5,9 +5,9 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/keystop/yaDiploma/internal/models"
-	"github.com/keystop/yaDiploma/pkg/logger"
-	"github.com/keystop/yaDiploma/pkg/luhn"
+	"github.com/keystop/yaDiploma.git/internal/models"
+	"github.com/keystop/yaDiploma.git/pkg/logger"
+	"github.com/keystop/yaDiploma.git/pkg/luhn"
 )
 
 func HandlerGetUserBalance(br models.BalanceRepo) http.HandlerFunc {
