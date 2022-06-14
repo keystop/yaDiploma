@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"time"
 
-	_ "github.com/lib/pq"
+	_"github.com/lib/pq"
 
 	"github.com/keystop/yaDiploma.git/internal/config"
 	"github.com/keystop/yaDiploma.git/internal/models"
@@ -23,28 +23,17 @@ func (s *serverDB) CheckDBConnection(ctx context.Context) {
 
 	err := s.PingContext(ctx)
 	if err != nil {
-		logger.Error("Ошибка подключения к БД", err)
+		logger.Error("Ошибка подключения к БД : ", err)
 	}
 }
-
-// makeMigrations start here for autotests
-// func (s *serverDB) makeMigrations() {
-// 	p := "Миграции базы данных:"
-// 	logger.Info(p, "Старт")
-// 	// setup database
-// 	logger.Info(p, "Применение миграций")
-// 	if err := goose.Up(s.DB, "../../db/migrations"); err != nil {
-// 		logger.Error(p, err)
-// 	}
-// 	logger.Info(p, "Завершение") // run app
-// }
 
 func OpenDBConnect() models.ServerDB {
 	s := new(serverDB)
 	ctx := context.Background()
 	db, err := sql.Open("postgres", config.Cfg.DBConnString())
+	logger.Info("ConnString = ", config.Cfg.DBConnString())
 	if err != nil {
-		logger.Error("Ошибка подключения к БД", err)
+		logger.Error("Ошибка подключения к БД : ", err)
 	}
 	s.DB = db
 	s.CheckDBConnection(ctx)

@@ -45,7 +45,7 @@ type EnvOptions struct {
 func (c *Config) checkEnv() {
 
 	e := new(EnvOptions)
-	e.DBConnString = "ads"
+	e.DBConnString = "user=kseikseich password=112233 dbname=yap sslmode=disable"
 	err := env.Parse(e)
 	if err != nil {
 		logger.Info("Ошибка чтения конфигурации из переменного окружения", err)
@@ -64,7 +64,7 @@ func (c *Config) checkEnv() {
 
 func (c *Config) setDefault() {
 	c.servAddr = "localhost:8080"
-	c.dbConnString = "user=kseikseich dbname=yad sslmode=disable"
+	c.dbConnString = "user=kseikseich password=112233 dbname=yap sslmode=disable"
 	//c.dbConnString = "postgresql://postgres:postgres@postgres/praktikum?sslmode=disable"
 	c.accrualAddress = "http://localhost:8082"
 }
